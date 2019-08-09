@@ -2,18 +2,23 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <PackageId>RestFluencing.JsonSchema</PackageId>
+    <PackageId>RestFluencing.JsonSchema.Standard</PackageId>
     <Version>1.0.0</Version>
-    <Authors>djmnz</Authors>
-    <Company />
-    <Product>RestFluencing</Product>
+    <Authors>dougcunha</Authors>
+    <Company>dougcunha</Company>
+    <Product>RestFluencing.Standard</Product>
     <PackageTags>rest test fluent api framework http testing validation integration schema model</PackageTags>
-    <Copyright>Copyright 2019 djmnz</Copyright>
-    <PackageLicenseUrl>https://github.com/djmnz/RestFluencing/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/djmnz/RestFluencing/</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/djmnz/RestFluencing/raw/4bfb24d77ac491348eb4165c9343fa90aef22a27/images/icon-testing-automation.png</PackageIconUrl>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/dougcunha/RestFluencing</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/dougcunha/RestFluencing/raw/4bfb24d77ac491348eb4165c9343fa90aef22a27/images/icon-testing-automation.png</PackageIconUrl>
     <RootNamespace>RestFluencing.JsonSchema</RootNamespace>
-    <Description>Package to help using Newton JsonSchema package to validate response models from an Integration test using RestFluencing.</Description>
+    <Description>**It's package is a fork from https://github.com/djmnz/RestFluencing/**
+
+Package to help using Newton JsonSchema package to validate response models from an Integration test using RestFluencing.</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,8 +34,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
-    <PackageReference Include="Newtonsoft.Json.Schema" Version="2.0.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.11" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
@@ -50,5 +55,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestFluencing.Core\RestFluencing.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,31 +1,28 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RestFluencing.Client.HttpApiClient;
-
-namespace RestFluencing.Tests
+﻿namespace RestFluencing.Tests
 {
-	[TestClass]
-	public class HttpApiClientBuilderTests
-	{
-		[TestMethod]
-		public void WhenNoClientShouldSetTheHttpApiClientBuilder()
-		{
-			var config = new RestConfiguration();
-			config.UsingWebApiClient();
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using RestFluencing.Client.HttpApiClient;
 
-			Assert.IsInstanceOfType(config.ClientFactory, typeof(HttpApiClientBuilder));
-		}
+    [TestClass]
+    public class HttpApiClientBuilderTests
+    {
+        [TestMethod]
+        public void HttpClientBuilderCreatesHttpApiClient()
+        {
+            var builder = new HttpApiClientBuilder();
 
+            var client = builder.Create();
 
-		[TestMethod]
-		public void HttpClientBuilderCreatesHttpApiClient()
-		{
-			var builder = new HttpApiClientBuilder();
+            Assert.IsInstanceOfType(client, typeof(HttpApiClient));
+        }
 
-			var client = builder.Create();
+        [TestMethod]
+        public void WhenNoClientShouldSetTheHttpApiClientBuilder()
+        {
+            var config = new RestConfiguration();
+            config.UsingWebApiClient();
 
-			Assert.IsInstanceOfType(client, typeof(HttpApiClient));
-		}
-
-
-	}
+            Assert.IsInstanceOfType(config.ClientFactory, typeof(HttpApiClientBuilder));
+        }
+    }
 }

@@ -1,21 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <PackageId>RestFluencing</PackageId>
+    <PackageId>RestFluencing.Standard</PackageId>
     <Version>1.0.0</Version>
-    <Authors>djmnz</Authors>
-    <Company />
-    <Product>RestFluencing</Product>
+    <Authors>dougcunha</Authors>
+    <Company>dougcunha</Company>
+    <Product>RestFluencing.Standard</Product>
     <PackageTags>rest test fluent api framework http testing validation integration</PackageTags>
-    <Copyright>Copyright 2019 djmnz</Copyright>
-    <PackageLicenseUrl>https://github.com/djmnz/RestFluencing/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/djmnz/RestFluencing/</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/djmnz/RestFluencing/raw/4bfb24d77ac491348eb4165c9343fa90aef22a27/images/icon-testing-automation.png</PackageIconUrl>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/dougcunha/RestFluencing</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/dougcunha/RestFluencing/raw/4bfb24d77ac491348eb4165c9343fa90aef22a27/images/icon-testing-automation.png</PackageIconUrl>
     <RootNamespace>RestFluencing</RootNamespace>
-    <Description>Framework to help testing Restful APIs in a fluent style that are easy to write and understand. Allows you to write your Api Requests and Asserting the response in a fluent manner.
+    <Description>**It's package is a fork from https://github.com/djmnz/RestFluencing/**
+
+Framework to help testing Restful APIs in a fluent style that are easy to write and understand. Allows you to write your Api Requests and Asserting the response in a fluent manner.
 Compatible with NUnit, MSTest, XUnit and any test runner.</Description>
-    <RepositoryUrl></RepositoryUrl>
+    <RepositoryUrl>https://github.com/dougcunha/RestFluencing</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -62,7 +67,15 @@ Compatible with NUnit, MSTest, XUnit and any test runner.</Description>
 
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
