@@ -8,9 +8,11 @@ namespace RestFluencing.Tests
     using RestFluencing.Tests.Models;
 
     [TestClass]
+    // ReSharper disable once TestClassNameDoesNotMatchFileNameWarning
     public class HasJsonSchemaRuleTests
     {
         private RestConfiguration _configuration;
+        // ReSharper disable once NotAccessedField.Local
         private TestApiFactory _factory;
 
         [TestMethod]

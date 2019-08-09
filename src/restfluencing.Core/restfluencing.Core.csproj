@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://github.com/dougcunha/RestFluencing</PackageProjectUrl>
     <PackageIconUrl>https://github.com/dougcunha/RestFluencing/raw/4bfb24d77ac491348eb4165c9343fa90aef22a27/images/icon-testing-automation.png</PackageIconUrl>
     <RootNamespace>RestFluencing</RootNamespace>
-    <Description>**It's package is a fork from https://github.com/djmnz/RestFluencing/**
+    <Description>**This package is a fork from https://github.com/djmnz/RestFluencing/**
 
 Framework to help testing Restful APIs in a fluent style that are easy to write and understand. Allows you to write your Api Requests and Asserting the response in a fluent manner.
 Compatible with NUnit, MSTest, XUnit and any test runner.</Description>
